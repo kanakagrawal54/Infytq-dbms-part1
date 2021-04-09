@@ -1,0 +1,6 @@
+create table store(
+name varchar2(20) primary key,
+location varchar2(30) not null,
+managername varchar2(30) unique
+
+);
