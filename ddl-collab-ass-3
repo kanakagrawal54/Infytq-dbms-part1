@@ -1,0 +1,1 @@
+alter table shopper Modify mobileno varchar2(15); 
