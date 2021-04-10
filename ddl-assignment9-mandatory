@@ -1,0 +1,1 @@
+ALter table supplier add city varchar2(10);
