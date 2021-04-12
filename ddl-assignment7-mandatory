@@ -1,0 +1,11 @@
+create table bill(
+
+billno number primary key,
+storename varchar2(20) references store(storename),
+shopperid number references shopper(shopperid),
+arcode char(5) references article(arcode),
+amount number,
+billdate date,
+quantity number(4) default 1,
+check (quantity >0)
+);
