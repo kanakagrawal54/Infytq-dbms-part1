@@ -1,0 +1,1 @@
+alter table player rename column pid to playerid;
