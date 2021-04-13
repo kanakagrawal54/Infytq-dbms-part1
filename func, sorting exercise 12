@@ -1,0 +1,1 @@
+select location,count(sid) as number_sman from salesman group by location;
