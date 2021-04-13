@@ -1,0 +1,2 @@
+select To_char(QDate,'Month') as Month,count(QuotationId)as QuotationCount  
+from Quotation group by To_char(QDate,'Month')
