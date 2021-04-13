@@ -1,0 +1,1 @@
+select prodid, pdesc, price as "Old_Price", round(775*price/1000,2) as "New_Price" from product where category='Sports'
