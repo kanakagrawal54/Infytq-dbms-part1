@@ -1,0 +1,1 @@
+select category from product group by category having count(prodid) >1 
