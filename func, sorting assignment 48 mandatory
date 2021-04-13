@@ -1,0 +1,1 @@
+select itemtype, category, round(avg(price),2) as "Average item price" from item group by itemtype, category having itemtype in ('Computer','FMCG') and avg(price) <2000
