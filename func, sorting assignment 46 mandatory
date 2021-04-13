@@ -1,0 +1,5 @@
+SELECT pymtmode, COUNT(*) as pymtcount 
+FROM orders 
+WHERE to_char(pymtdate,'YYYY') < 2015
+GROUP BY pymtmode 
+HAVING count(*) > 1
