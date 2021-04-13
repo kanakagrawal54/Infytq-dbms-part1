@@ -1,0 +1,1 @@
+select saleid,round(abs(months_between(sldate,sysdate)),1) as"MONTH_AGED" from sale 
