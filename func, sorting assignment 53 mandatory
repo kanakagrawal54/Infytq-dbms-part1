@@ -1,0 +1,1 @@
+select itemcode, price as "Old Price",round(price*745/1000,2) as "New Price" from item where itemtype='FMCG'
