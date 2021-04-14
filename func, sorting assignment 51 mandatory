@@ -1,0 +1,9 @@
+select empid,empname,salary , 
+case 
+when designation='Administrator' then salary*1.10
+when designation='Manager' then salary*1.05
+when designation='Billing Staff' then salary*1.20
+when designation='Security' then salary*1.25
+else salary*1.02
+end as increasedsalary
+from empdetails;
