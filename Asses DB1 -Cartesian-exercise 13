@@ -1,0 +1,1 @@
+SELECT Id, EName, E.CompId AS CompId, make FROM Employee E INNER JOIN Computer C ON E.CompId = C.CompId WHERE C.model in ('Precision', 'Edge')
