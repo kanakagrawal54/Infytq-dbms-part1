@@ -1,0 +1,6 @@
+select orderid, status, 
+case
+when pymtmode is NULL then 'Payment yet not done'
+else pymtmode
+end as pymtmode
+from orders
