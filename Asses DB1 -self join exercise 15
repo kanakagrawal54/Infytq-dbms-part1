@@ -1,0 +1,5 @@
+select s.sid, s.sname, s.location 
+from salesman s 
+inner join (
+  select location from salesman group by location having count(*) >1
+) ss on s.location = ss.location 
