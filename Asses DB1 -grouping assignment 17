@@ -1,0 +1,1 @@
+select i.itemcode,i.descr,i.category, q.quotedprice from item i inner join quotation q on q.itemcode=i.itemcode where qstatus ='Accepted'
