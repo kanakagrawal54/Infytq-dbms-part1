@@ -1,0 +1,1 @@
+select empname,designation, emailid from empdetails where worksin =(select worksin from empdetails where empname='George') and empname <> 'George'
